@@ -1,0 +1,12 @@
+/* ==========================================================================
+   BÁCH HÓA XANH DESIGN SYSTEM - MAIN STYLESHEET ENTRY
+   Tập hợp các module CSS phân theo từng chức năng của Website Bán Rau Sạch
+   ========================================================================== */
+
+@import url('modules/base.css');
+@import url('modules/header-nav.css');
+@import url('modules/san-pham.css');
+@import url('modules/quan-ly.css');
+@import url('modules/ban-hang-tai-quay.css');
+@import url('modules/thong-ke.css');
+@import url('modules/modals.css');

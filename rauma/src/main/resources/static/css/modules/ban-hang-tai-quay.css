@@ -1,0 +1,68 @@
+/* ==========================================================================
+   CSS MODULE: BÁN HÀNG TẠI QUẦY (POS Thu ngân, Tính tiền, Bảng chọn nhanh)
+   ========================================================================== */
+
+.pos-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 16px;
+    align-items: start;
+}
+
+.pos-catalog-panel {
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 18px;
+}
+
+.pos-cart-panel {
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pos-order-items-list {
+    max-height: 280px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pos-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background: #f8fafc;
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
+}
+
+.pos-calc-box {
+    border-top: 1px dashed var(--border-color);
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.calc-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.calc-line.total {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--bhx-green-dark);
+}
+
+/* KPI Cards for Reports */

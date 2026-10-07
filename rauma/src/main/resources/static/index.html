@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bách Hóa XANH - Siêu Thị Rau Sạch Tươi Ngon, Giá Tốt Mỗi Ngày</title>
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Main Style Sheet with cache buster -->
+    <link rel="stylesheet" href="css/style.css?v=20261001_2">
+    <style>
+        /* Emergency Inline Styles to override any browser-cached coffee css */
+        :root {
+            --bhx-green: #008848;
+            --bhx-green-dark: #006837;
+            --bhx-yellow: #fed100;
+            --bhx-red: #ea1c24;
+            --bg-page: #f4f6f8;
+            --bg-card: #ffffff;
+            --border-color: #e5e7eb;
+            --header-height: 74px;
+            --sidebar-width: 250px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8 !important;
+            color: #1f2937 !important;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        input,
+        button,
+        select,
+        textarea,
+        optgroup {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .top-header {
+            background-color: #008848 !important;
+            color: #ffffff !important;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        .header-inner {
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .logo-badge {
+            width: 44px;
+            height: 44px;
+            background: #fed100;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-badge i {
+            font-size: 1.5rem;
+            color: #006837;
+        }
+
+        .logo-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #fed100 !important;
+        }
+
+        .logo-title span {
+            color: #fff !important;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 1px 6px;
+            border-radius: 4px;
+            margin-left: 4px;
+        }
+
+        .logo-slogan {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .header-search {
+            flex: 1;
+            max-width: 540px;
+            position: relative;
+        }
+
+        .search-input-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-input-box input {
+            width: 100%;
+            height: 44px;
+            background: #fff !important;
+            border-radius: 9999px;
+            border: none;
+            padding: 0 50px 0 46px;
+            font-size: 0.95rem;
+            color: #1f2937;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input-box .search-prefix-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6b7280;
+            font-size: 1.05rem;
+        }
+
+        .search-input-box .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 34px;
+            height: 34px;
+            background: #008848;
+            color: #fff;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .location-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 8px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .location-btn i {
+            color: #fed100;
+        }
+
+        .header-cart-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 8px 16px;
+            border-radius: 9999px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .cart-icon-wrap i {
+            font-size: 1.25rem;
+            color: #fed100;
+        }
+
+        .cart-badge-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: #ea1c24;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 4px;
+            border: 2px solid #008848;
+        }
+
+        .cart-info-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .cart-info-text span {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .cart-info-text strong {
+            font-size: 0.85rem;
+            color: #fed100;
+        }
+
+        .auth-btn-pill {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background: #fff;
+            color: #006837;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .secondary-navbar {
+            background: #fff !important;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .subnav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 48px;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .subnav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            overflow-x: auto;
+            white-space: nowrap;
+            flex: 1;
+        }
+
+        .subnav-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #4b5563;
+            background: none;
+            border: none;
+        }
+
+        .subnav-link.active {
+            color: #008848 !important;
+            background-color: #e8f5e9 !important;
+        }
+
+        .subnav-link.highlight {
+            color: #ea1c24 !important;
+            font-weight: 700;
+        }
+
+        .subnav-link.admin-only,
+        .subnav-link.staff-only {
+            background: #fef3c7 !important;
+            color: #92400e !important;
+            border: 1px solid #fde68a !important;
+        }
+
+        .quick-role-switcher {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 9999px;
+        }
+
+        .role-switch-btn {
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            background: #e2e8f0;
+            color: #334155;
+            border: none;
+        }
+
+        .role-switch-btn.active-role {
+            background: #008848 !important;
+            color: #fff !important;
+        }
+
+        .main-wrapper {
+            padding: 16px 0 40px;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .bhx-layout-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .bhx-sidebar {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            background: #008848 !important;
+            color: #fff !important;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .category-menu-list {
+            list-style: none;
+            padding: 6px 0;
+            margin: 0;
+        }
+
+        .category-menu-item {
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .category-menu-item a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        .category-menu-item.active a {
+            background: #e8f5e9 !important;
+            color: #006837 !important;
+            font-weight: 700;
+            border-left: 4px solid #008848;
+        }
+
+        .category-menu-item.hot-deal a {
+            color: #ea1c24 !important;
+        }
+
+        .bhx-content {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .bhx-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: #4b5563;
+            background: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .breadcrumb-back {
+            color: #008848;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .subcat-icons-row {
+            background: #fff;
+            border-radius: 10px;
+            padding: 14px 16px;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            overflow-x: auto;
+        }
+
+        .subcat-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 1.5px solid transparent;
+            min-width: 90px;
+            text-align: center;
+        }
+
+        .subcat-card.active {
+            border-color: #008848 !important;
+            background: #f0fdf4 !important;
+        }
+
+        .subcat-card.active .subcat-title {
+            color: #008848 !important;
+            font-weight: 700;
+        }
+
+        .subcat-img-box {
+            width: 52px;
+            height: 52px;
+            border-radius: 9999px;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+        }
+
+        .filter-pills-row {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px 16px;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .filter-tags-list {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-tag-pill {
+            padding: 5px 14px;
+            border-radius: 9999px;
+            border: 1px solid #e5e7eb;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #4b5563;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .filter-tag-pill.active {
+            background: #008848 !important;
+            color: #fff !important;
+            border-color: #008848 !important;
+        }
+
+        .filter-btn-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid #008848;
+            color: #008848;
+            font-size: 0.85rem;
+            font-weight: 700;
+            background: #fff;
+        }
+
+        .trust-badges-banner {
+            background: #fff;
+            border: 1px solid #d1fae5;
+            border-radius: 10px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.84rem;
+            color: #006837;
+            font-weight: 600;
+        }
+
+        .trust-item i {
+            color: #008848;
+            font-size: 1.05rem;
+        }
+
+        .bhx-promo-split-banner {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .promo-left-red {
+            background: linear-gradient(135deg, #ea1c24 0%, #c41219 100%) !important;
+            color: #fff !important;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .promo-tag-badge {
+            background: #fed100;
+            color: #111827;
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .promo-left-red h2 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #fff !important;
+        }
+
+        .promo-right-yellow {
+            background: linear-gradient(135deg, #fff9c4 0%, #fed100 100%) !important;
+            color: #111827;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .promo-yellow-info h3 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #1e3a8a;
+        }
+
+        .promo-price-huge {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: #ea1c24;
+            margin: 4px 0;
+        }
+
+        .promo-vege-showcase-imgs {
+            display: flex;
+            gap: 8px;
+        }
+
+        .promo-mini-thumb {
+            width: 60px;
+            height: 70px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #fff;
+        }
+
+        .products-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .section-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title-wrap h2 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #1f2937;
+        }
+
+        .product-count-badge {
+            background: #e8f5e9;
+            color: #006837;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 9999px;
+        }
+
+        .bhx-product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .bhx-product-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .bhx-product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-color: #a7f3d0;
+        }
+
+        .card-top-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            background: #ea1c24;
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 800;
+            padding: 3px 7px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .card-top-tag.green {
+            background: #008848;
+        }
+
+        .product-img-wrap {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            background: #f8fafc;
+            cursor: pointer;
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vietgap-badge {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #006837;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-body {
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .card-category-hint {
+            font-size: 0.72rem;
+            color: #9ca3af;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .card-product-name {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #1f2937;
+            line-height: 1.35;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .card-product-name:hover {
+            color: #008848;
+        }
+
+        .current-price {
+            font-size: 1.08rem;
+            font-weight: 800;
+            color: #006837;
+        }
+
+        .price-unit {
+            font-size: 0.8rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
+        .old-price {
+            color: #9ca3af;
+            text-decoration: line-through;
+            font-size: 0.78rem;
+        }
+
+        .discount-tag {
+            color: #ea1c24;
+            font-weight: 700;
+            background: #fee2e2;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 0.72rem;
+            margin-left: 6px;
+        }
+
+        .stock-indicator {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .stock-indicator.low {
+            color: #ea1c24;
+            font-weight: 700;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            background: #008848 !important;
+            color: #fff !important;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 8px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn:hover {
+            background: #006837 !important;
+        }
+
+        .add-to-cart-btn:disabled {
+            background: #cbd5e1 !important;
+            cursor: not-allowed;
+        }
+
+        .page-view {
+            display: none;
+        }
+
+        .page-view.active-view {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================================
+         TRANG ĐĂNG NHẬP / ĐĂNG KÝ TOÀN MÀN HÌNH
+         ========================================================================= -->
+    <div id="login-page" style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: linear-gradient(135deg, #004d26 0%, #008848 50%, #00b35a 100%);
+        overflow-y: auto;
+        font-family: 'Inter', sans-serif;
+    ">
+        <!-- Background decorative circles -->
+        <div style="position:absolute;top:-80px;left:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,0.06);pointer-events:none;"></div>
+        <div style="position:absolute;bottom:-60px;right:-60px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,0.05);pointer-events:none;"></div>
+        <div style="position:absolute;top:40%;left:-40px;width:150px;height:150px;border-radius:50%;background:rgba(254,209,0,0.08);pointer-events:none;"></div>
+
+        <div style="
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:24px 16px;
+            position:relative;
+            z-index:1;
+        ">
+            <div style="
+                background:#fff;
+                border-radius:20px;
+                box-shadow:0 25px 60px rgba(0,0,0,0.25);
+                width:100%;
+                max-width:460px;
+                overflow:hidden;
+            ">
+                <!-- Header card -->
+                <div style="
+                    background:linear-gradient(135deg,#006837,#008848);
+                    padding:24px 32px 20px;
+                    text-align:center;
+                ">
+                    <div style="
+                        width:60px;height:60px;
+                        background:#fed100;
+                        border-radius:50%;
+                        display:inline-flex;
+                        align-items:center;
+                        justify-content:center;
+                        margin-bottom:10px;
+                        box-shadow:0 4px 12px rgba(0,0,0,0.2);
+                    ">
+                        <i class="fa-solid fa-leaf" style="font-size:1.6rem;color:#006837;"></i>
+                    </div>
+                    <div style="font-size:1.4rem;font-weight:900;color:#fed100;letter-spacing:-0.5px;">Bách hóa XANH</div>
+                    <div style="font-size:0.8rem;color:rgba(255,255,255,0.8);margin-top:2px;">Siêu thị rau sạch gần nhà, giá tốt hơn</div>
+                </div>
+
+                <!-- Tab switcher -->
+                <div style="display:flex;border-bottom:2px solid #e5e7eb;">
+                    <button id="lp-tab-login" onclick="lpSwitchTab('login')" style="
+                        flex:1;padding:12px;border:none;background:#fff;
+                        font-size:0.9rem;font-weight:700;color:#008848;
+                        border-bottom:3px solid #008848;cursor:pointer;
+                        font-family:'Inter',sans-serif;transition:all 0.2s;
+                    ">
+                        <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
+                    </button>
+                    <button id="lp-tab-register" onclick="lpSwitchTab('register')" style="
+                        flex:1;padding:12px;border:none;background:#fff;
+                        font-size:0.9rem;font-weight:700;color:#9ca3af;
+                        border-bottom:3px solid transparent;cursor:pointer;
+                        font-family:'Inter',sans-serif;transition:all 0.2s;
+                    ">
+                        <i class="fa-solid fa-user-plus"></i> Đăng Ký
+                    </button>
+                </div>
+
+                <!-- Body card -->
+                <div style="padding:24px 32px 28px;">
+
+                    <!-- ===== PANEL LOGIN ===== -->
+                    <div id="lp-panel-login">
+                        <!-- Quick fill buttons -->
+                        <div style="background:#f0fdf4;border:1px dashed #008848;border-radius:10px;padding:10px 14px;margin-bottom:16px;">
+                            <div style="font-size:0.78rem;font-weight:700;color:#006837;margin-bottom:8px;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Đăng nhập nhanh 3 vai trò:
+                            </div>
+                            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                                <button onclick="lpQuickFill('admin','admin')" style="flex:1;min-width:80px;padding:5px 8px;border-radius:8px;border:1px solid #d1fae5;background:#fff;font-size:0.75rem;font-weight:700;color:#006837;cursor:pointer;">🔑 Quản Lý</button>
+                                <button onclick="lpQuickFill('nv_lan','123456')" style="flex:1;min-width:80px;padding:5px 8px;border-radius:8px;border:1px solid #d1fae5;background:#fff;font-size:0.75rem;font-weight:700;color:#006837;cursor:pointer;">👔 Nhân Viên</button>
+                                <button onclick="lpQuickFill('kh01','kh01')" style="flex:1;min-width:80px;padding:5px 8px;border-radius:8px;border:1px solid #d1fae5;background:#fff;font-size:0.75rem;font-weight:700;color:#006837;cursor:pointer;">🛒 Khách Hàng</button>
+                            </div>
+                        </div>
+
+                        <!-- Login form -->
+                        <form id="lp-form-login" onsubmit="handleLpLoginSubmit(event)" novalidate>
+                            <div style="margin-bottom:14px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Tên đăng nhập</label>
+                                <div style="position:relative;">
+                                    <i class="fa-regular fa-user" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="text" id="lp-username" placeholder="Nhập tên đăng nhập..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;
+                                        outline:none;transition:border-color 0.2s;
+                                        font-family:'Inter',sans-serif;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:18px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Mật khẩu</label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-lock" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="password" id="lp-password" placeholder="Nhập mật khẩu..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;
+                                        outline:none;transition:border-color 0.2s;
+                                        font-family:'Inter',sans-serif;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div id="lp-error" style="display:none;background:#fee2e2;color:#dc2626;border-radius:8px;padding:10px 14px;font-size:0.85rem;margin-bottom:14px;"></div>
+                            <button type="submit" id="lp-submit-btn" style="
+                                width:100%;padding:12px;
+                                background:linear-gradient(135deg,#006837,#008848);
+                                color:#fff;border:none;border-radius:10px;
+                                font-size:0.95rem;font-weight:700;
+                                cursor:pointer;transition:opacity 0.2s;
+                                font-family:'Inter',sans-serif;
+                                display:flex;align-items:center;justify-content:center;gap:8px;
+                            " onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+                                <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
+                            </button>
+                        </form>
+
+                        <div style="text-align:center;margin-top:16px;font-size:0.85rem;color:#6b7280;">
+                            Chưa có tài khoản?
+                            <a href="#" onclick="lpSwitchTab('register');return false;" style="color:#008848;font-weight:700;text-decoration:none;">Đăng ký ngay</a>
+                        </div>
+                    </div>
+
+                    <!-- ===== PANEL REGISTER ===== -->
+                    <div id="lp-panel-register" style="display:none;">
+                        <form id="lp-form-register" onsubmit="handleLpRegisterSubmit(event)" novalidate>
+                            <div style="margin-bottom:13px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Tên đăng nhập <span style="color:#dc2626;">*</span></label>
+                                <div style="position:relative;">
+                                    <i class="fa-regular fa-user" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="text" id="lp-reg-username" placeholder="Ví dụ: khachhang02 (chữ và số)..." style="
+                                         width:100%;padding:10px 12px 10px 36px;
+                                         border:1.5px solid #e5e7eb;border-radius:10px;
+                                         font-size:0.9rem;color:#1f2937;outline:none;
+                                         font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                     " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:13px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Mật khẩu <span style="color:#dc2626;">*</span></label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-lock" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="password" id="lp-reg-password" placeholder="Mật khẩu bảo mật..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;outline:none;
+                                        font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:13px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Họ và tên <span style="color:#dc2626;">*</span></label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-id-card" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="text" id="lp-reg-fullname" placeholder="Họ và tên đầy đủ (không chứa số, ký tự đặc biệt)..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;outline:none;
+                                        font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:13px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Số điện thoại <span style="color:#dc2626;">*</span></label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-phone" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="tel" id="lp-reg-phone" maxlength="10" placeholder="10 số, bắt đầu bằng 0..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;outline:none;
+                                        font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'"
+                                    oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:13px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Email <span style="color:#dc2626;">*</span></label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-envelope" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#9ca3af;"></i>
+                                    <input type="text" id="lp-reg-email" placeholder="example@gmail.com..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;outline:none;
+                                        font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'">
+                                </div>
+                            </div>
+                            <div style="margin-bottom:18px;">
+                                <label style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px;">Địa chỉ nhận hàng</label>
+                                <div style="position:relative;">
+                                    <i class="fa-solid fa-location-dot" style="position:absolute;left:12px;top:12px;color:#9ca3af;"></i>
+                                    <textarea id="lp-reg-address" rows="2" placeholder="Số nhà, đường, phường, quận/huyện..." style="
+                                        width:100%;padding:10px 12px 10px 36px;
+                                        border:1.5px solid #e5e7eb;border-radius:10px;
+                                        font-size:0.9rem;color:#1f2937;outline:none;resize:none;
+                                        font-family:'Inter',sans-serif;transition:border-color 0.2s;
+                                    " onfocus="this.style.borderColor='#008848'" onblur="this.style.borderColor='#e5e7eb'"></textarea>
+                                </div>
+                            </div>
+                            <div id="lp-reg-error" style="display:none;background:#fee2e2;color:#dc2626;border-radius:8px;padding:10px 14px;font-size:0.85rem;margin-bottom:14px;"></div>
+                            <div id="lp-reg-success" style="display:none;background:#d1fae5;color:#065f46;border-radius:8px;padding:10px 14px;font-size:0.85rem;margin-bottom:14px;"></div>
+                            <button type="submit" id="lp-reg-submit-btn" style="
+                                width:100%;padding:12px;
+                                background:linear-gradient(135deg,#006837,#008848);
+                                color:#fff;border:none;border-radius:10px;
+                                font-size:0.95rem;font-weight:700;
+                                cursor:pointer;transition:opacity 0.2s;
+                                font-family:'Inter',sans-serif;
+                                display:flex;align-items:center;justify-content:center;gap:8px;
+                            " onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+                                <i class="fa-solid fa-user-plus"></i> Tạo Tài Khoản
+                            </button>
+                        </form>
+
+                        <div style="text-align:center;margin-top:16px;font-size:0.85rem;color:#6b7280;">
+                            Đã có tài khoản?
+                            <a href="#" onclick="lpSwitchTab('login');return false;" style="color:#008848;font-weight:700;text-decoration:none;">Đăng nhập ngay</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         MAIN APP (Ẩn cho đến khi đăng nhập thành công)
+         ========================================================================= -->
+    <div id="main-app" style="display:none;">
+
+    <!-- =========================================================================
+         TOP HEADER (BÁCH HÓA XANH SIGNATURE GREEN)
+         ========================================================================= -->
+    <header class="top-header">
+        <div class="container header-inner">
+            <!-- Brand Logo -->
+            <div class="brand-logo" onclick="switchPage('home')">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div class="logo-text-group">
+                    <div class="logo-title">Bách hóa XANH<span>.com</span></div>
+                    <div class="logo-slogan">Siêu thị rau sạch gần nhà, giá tốt hơn</div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="header-search">
+                <div class="search-input-box">
+                    <i class="fa-solid fa-magnifying-glass search-prefix-icon"></i>
+                    <input type="text" id="global-search-input"
+                        placeholder="Rau lá đồng giá 5.000đ/gói, tìm kiếm rau củ quả..."
+                        onkeyup="if(event.key==='Enter') executeSearch()">
+                    <button class="search-btn" onclick="executeSearch()" title="Tìm kiếm">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Location Picker -->
+                <button class="location-btn" onclick="openLocationModal()" title="Chọn khu vực giao hàng"
+                    style="display: none;">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="current-location-label">Hà Nội & lân cận</span>
+                    <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; opacity: 0.8;"></i>
+                </button>
+
+                <!-- Shopping Cart -->
+                <button class="header-cart-btn" onclick="toggleCartDrawer(true)" id="header-cart-btn"
+                    title="Xem giỏ hàng">
+                    <div class="cart-icon-wrap">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="cart-badge-count" id="header-cart-count">0</span>
+                    </div>
+                    <div class="cart-info-text">
+                        <span>Giỏ hàng</span>
+                        <strong id="header-cart-total">0đ</strong>
+                    </div>
+                </button>
+
+                <!-- User Account / Role Area -->
+                <div class="user-auth-area" id="user-auth-area">
+                    <!-- Trạng thái CHƯA đăng nhập -->
+                    <button class="auth-btn-pill" id="btn-open-login" onclick="openAuthModal('login')">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Đăng nhập</span>
+                    </button>
+
+                    <!-- Trạng thái ĐÃ đăng nhập -->
+                    <div class="user-logged-box hidden" id="user-logged-pill" onclick="openProfileModal()">
+                        <div class="user-avatar-circle" id="user-avatar-text">U</div>
+                        <div class="user-name-role">
+                            <span class="uname" id="user-display-name">Người dùng</span>
+                            <span class="urole" id="user-display-role">Khách Hàng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         SECONDARY NAVBAR
+         ========================================================================= -->
+    <nav class="secondary-navbar">
+        <div class="container subnav-inner">
+            <div class="subnav-links" id="main-nav-links">
+                <button class="subnav-link active" id="nav-home" data-page="home" onclick="switchPage('home')">
+                    <i class="fa-solid fa-house"></i> Trang Chủ
+                </button>
+                <button class="subnav-link highlight hidden" data-page="hot-deals" id="nav-hot-deals"
+                    onclick="filterHotDeals()">
+                    <i class="fa-solid fa-bolt"></i> Khuyến Mãi Sốc
+                </button>
+                <button class="subnav-link" data-page="my-orders" id="nav-my-orders" onclick="switchPage('my-orders')">
+                    <i class="fa-solid fa-clipboard-list"></i> Đơn Của Tôi
+                </button>
+                <!-- Staff & Manager Pages -->
+                <button class="subnav-link staff-only hidden" data-page="orders" id="nav-orders"
+                    onclick="switchPage('orders')">
+                    <i class="fa-solid fa-boxes-packing"></i> QL Đơn Hàng
+                </button>
+                <button class="subnav-link staff-only hidden" data-page="pos" id="nav-pos" onclick="switchPage('pos')">
+                    <i class="fa-solid fa-cash-register"></i> QL Bán Hàng (Tại Quầy)
+                </button>
+                <button class="subnav-link staff-only hidden" data-page="products" id="nav-products"
+                    onclick="switchPage('products')">
+                    <i class="fa-solid fa-carrot"></i> QL Sản Phẩm
+                </button>
+                <!-- Manager Only Pages -->
+                <button class="subnav-link admin-only hidden" data-page="suppliers" id="nav-suppliers"
+                    onclick="switchPage('suppliers')">
+                    <i class="fa-solid fa-truck-field"></i> QL Nhà Cung Cấp
+                </button>
+                <button class="subnav-link admin-only hidden" data-page="customers" id="nav-customers"
+                    onclick="switchPage('customers')">
+                    <i class="fa-solid fa-users"></i> QL Khách Hàng
+                </button>
+                <button class="subnav-link admin-only hidden" data-page="employees" id="nav-employees"
+                    onclick="switchPage('employees')">
+                    <i class="fa-solid fa-id-badge"></i> QL Nhân Viên
+                </button>
+                <button class="subnav-link admin-only hidden" data-page="reports" id="nav-reports"
+                    onclick="switchPage('reports')">
+                    <i class="fa-solid fa-chart-line"></i> Báo Cáo & Thống Kê
+                </button>
+            </div>
+
+            <!-- Quick Demo Role Switcher for Testing -->
+            <div class="quick-role-switcher hidden" id="quick-role-switcher"
+                title="Chuyển nhanh vai trò để kiểm tra chức năng">
+                <span><i class="fa-solid fa-sliders"></i> Test Role:</span>
+                <button class="role-switch-btn active-role" id="role-btn-kh"
+                    onclick="quickSwitchRole('KhachHang')">Khách Hàng</button>
+                <button class="role-switch-btn" id="role-btn-nv" onclick="quickSwitchRole('NhanVien')">Nhân
+                    Viên</button>
+                <button class="role-switch-btn" id="role-btn-ql" onclick="quickSwitchRole('QuanLy')">Quản Lý</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================================================
+         MAIN APPLICATION CONTENT CONTAINER
+         ========================================================================= -->
+    <main class="main-wrapper">
+        <div class="container">
+
+            <!-- PAGE 1: HOME (BÁCH HÓA XANH INTERFACE) -->
+            <div class="page-view active-view" id="page-home">
+                <div class="bhx-layout-grid" style="grid-template-columns: 1fr;">
+                    <!-- LEFT SIDEBAR: DANH MỤC SẢN PHẨM -->
+                    <aside class="bhx-sidebar" style="display: none;">
+                        <div class="sidebar-header">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Danh Mục Sản Phẩm</span>
+                        </div>
+                        <ul class="category-menu-list">
+                            <li class="category-menu-item hot-deal">
+                                <a href="javascript:void(0)" onclick="filterHotDeals()">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-percent"></i>
+                                        <span>KHUYẾN MÃI SỐC</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)" onclick="filterCategoryByMockName('Thịt, cá, trứng')">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-drumstick-bite"></i>
+                                        <span>THỊT, CÁ, TRỨNG, HẢI SẢN</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item active">
+                                <a href="javascript:void(0)" onclick="selectCategory(null)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-seedling"></i>
+                                        <span>RAU, CỦ, NẤM, TRÁI CÂY</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)" onclick="selectCategory(6)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-bottle-droplet"></i>
+                                        <span>DẦU ĂN, NƯỚC CHẤM, GIA VỊ</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)" onclick="selectCategory(2)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-wheat-awn"></i>
+                                        <span>GẠO, BỘT, ĐỒ KHÔ</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-bowl-food"></i>
+                                        <span>MÌ, MIẾN, CHÁO, PHỞ</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-glass-water"></i>
+                                        <span>SỮA CÁC LOẠI</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-ice-cream"></i>
+                                        <span>KEM, SỮA CHUA</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-snowflake"></i>
+                                        <span>THỰC PHẨM ĐÔNG MÁT</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-wine-bottle"></i>
+                                        <span>BIA, NƯỚC GIẢI KHÁT</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-mug-hot"></i>
+                                        <span>CÀ PHÊ, TRÀ, NGŨ CỐC</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-cookie"></i>
+                                        <span>BÁNH KẸO CÁC LOẠI</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-pump-soap"></i>
+                                        <span>CHĂM SÓC CÁ NHÂN</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-broom"></i>
+                                        <span>VỆ SINH NHÀ CỬA</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-baby-carriage"></i>
+                                        <span>SẢN PHẨM MẸ VÀ BÉ</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-kitchen-set"></i>
+                                        <span>ĐỒ DÙNG GIA ĐÌNH</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-star" style="color: #eab308;"></i>
+                                        <span>ƯU ĐÃI TỪ HÃNG</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="category-menu-item">
+                                <a href="javascript:void(0)" onclick="showStoreLocations()">
+                                    <div class="cat-label-wrap">
+                                        <i class="fa-solid fa-store" style="color: var(--bhx-green);"></i>
+                                        <span>XEM 3.904 CỬA HÀNG</span>
+                                    </div>
+                                    <span class="cat-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- RIGHT MAIN CONTENT -->
+                    <section class="bhx-content">
+                        <!-- Breadcrumb -->
+                        <div class="bhx-breadcrumb">
+                            <span class="breadcrumb-back" onclick="selectCategory(null)"><i
+                                    class="fa-solid fa-chevron-left"></i> Rau, Củ, Nấm, Trái Cây</span>
+                            <span>/</span>
+                            <span id="breadcrumb-current-label">Rau ăn lá tươi sạch VietGAP</span>
+                        </div>
+
+                        <!-- Subcategory Icon Pills Row (Matching BHX Screenshot) -->
+                        <div class="subcat-icons-row" id="subcat-icons-row">
+                            <div class="subcat-card active" onclick="selectCategory(null, this)">
+                                <div class="subcat-img-box">
+                                    🥬
+                                </div>
+                                <span class="subcat-title">Tất cả</span>
+                            </div>
+                            <div class="subcat-card" onclick="selectCategory(1, this)">
+                                <div class="subcat-img-box">
+                                    🥦
+                                </div>
+                                <span class="subcat-title">Rau lá</span>
+                            </div>
+                            <div class="subcat-card" onclick="selectCategory(2, this)">
+                                <div class="subcat-img-box">
+                                    🥕
+                                </div>
+                                <span class="subcat-title">Củ, quả</span>
+                            </div>
+                            <div class="subcat-card" onclick="selectCategory(4, this)">
+                                <div class="subcat-img-box">
+                                    🍄
+                                </div>
+                                <span class="subcat-title">Nấm các loại</span>
+                            </div>
+                            <div class="subcat-card" onclick="selectCategory(5, this)">
+                                <div class="subcat-img-box">
+                                    🍎
+                                </div>
+                                <span class="subcat-title">Trái cây</span>
+                            </div>
+                            <div class="subcat-card" onclick="selectCategory(6, this)">
+                                <div class="subcat-img-box">
+                                    🌿
+                                </div>
+                                <span class="subcat-title">Rau gia vị</span>
+                            </div>
+                        </div>
+
+                        <!-- Filter Pills & Toggle Row -->
+                        <div class="filter-pills-row" style="display: none;">
+                            <div class="filter-tags-list">
+                                <button class="filter-tag-pill active" onclick="applyTagFilter('all', this)">Tất
+                                    cả</button>
+                                <button class="filter-tag-pill" onclick="applyTagFilter('ăn sống', this)">Rau ăn
+                                    sống</button>
+                                <button class="filter-tag-pill" onclick="applyTagFilter('cải', this)">Rau cải,
+                                    muống</button>
+                                <button class="filter-tag-pill" onclick="applyTagFilter('nấm', this)">Nấm tươi</button>
+                                <button class="filter-tag-pill" onclick="applyTagFilter('gia vị', this)">Rau gia
+                                    vị</button>
+                                <button class="filter-tag-pill" onclick="applyTagFilter('under15k', this)">Dưới
+                                    15.000đ</button>
+                            </div>
+                            <button class="filter-btn-toggle" onclick="toggleAdvancedFilterModal()">
+                                <i class="fa-solid fa-filter"></i>
+                                <span>Bộ lọc</span>
+                            </button>
+                        </div>
+
+                        <!-- Green Trust Badges Banner -->
+                        <div class="trust-badges-banner">
+                            <div class="trust-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Cam kết sản phẩm Tích Xanh Trách Nhiệm</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fa-solid fa-box-open"></i>
+                                <span>Đóng gói hợp vệ sinh</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span>Bao đổi trả nếu không hài lòng</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fa-solid fa-leaf"></i>
+                                <span>Rau lá cắt trễ, tươi lâu</span>
+                            </div>
+                        </div>
+
+                        <!-- Split Promotional Banner (Siêu Tiết Kiệm Đồng Giá 5k) -->
+                        <div class="bhx-promo-split-banner">
+                            <div class="promo-left-red">
+                                <span class="promo-tag-badge">Khuyến Mãi Lớn</span>
+                                <h2>SIÊU TIẾT KIỆM</h2>
+                                <p>Rau xanh tươi sạch mỗi ngày</p>
+                            </div>
+                            <div class="promo-right-yellow">
+                                <div class="promo-yellow-info">
+                                    <h3>Rau Lá Quốc Dân</h3>
+                                    <div class="promo-price-huge">ĐỒNG GIÁ 5.000đ/gói</div>
+                                    <div class="promo-guarantee">* Hàng tươi sống không hài lòng 1 đổi 2</div>
+                                </div>
+                                <div class="promo-vege-showcase-imgs">
+                                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=150"
+                                        alt="Cải thìa" class="promo-mini-thumb">
+                                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&q=80&w=150"
+                                        alt="Rau muống" class="promo-mini-thumb">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Header & Sort Selection -->
+                        <div class="products-section-header">
+                            <div class="section-title-wrap">
+                                <h2>Danh Sách Sản Phẩm</h2>
+                                <span class="product-count-badge" id="product-total-count">16 sản phẩm</span>
+                            </div>
+                            <div class="sort-select-box">
+                                <select id="sort-order-select" onchange="sortProducts(this.value)">
+                                    <option value="default">Sắp xếp: Mặc định</option>
+                                    <option value="price-asc">Giá tăng dần</option>
+                                    <option value="price-desc">Giá giảm dần</option>
+                                    <option value="name-asc">Tên A-Z</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Product Cards Grid (Populated dynamically) -->
+                        <div class="bhx-product-grid" id="product-grid-container">
+                            <!-- Cards inserted via JavaScript -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- PAGE 2: QL ĐƠN HÀNG (STAFF & MANAGER) -->
+            <div class="page-view" id="page-orders">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-boxes-packing" style="color: var(--bhx-green);"></i> Quản Lý Đơn Hàng
+                        </h1>
+                        <p>Theo dõi luồng đơn hàng: Chờ xác nhận → Đang giao → Hoàn thành / Đã hủy</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-outline" onclick="loadOrdersList()"><i class="fa-solid fa-rotate"></i> Làm
+                            mới</button>
+                    </div>
+                </div>
+
+                <div class="data-table-card">
+                    <div class="table-filter-bar">
+                        <div class="filter-tags-list">
+                            <button class="filter-tag-pill active" onclick="filterOrderStatus('', this)">Tất cả</button>
+                            <button class="filter-tag-pill" onclick="filterOrderStatus('ChoXacNhan', this)">Chờ xác
+                                nhận</button>
+                            <button class="filter-tag-pill" onclick="filterOrderStatus('DangGiao', this)">Đang
+                                giao</button>
+                            <button class="filter-tag-pill" onclick="filterOrderStatus('HoanThanh', this)">Hoàn
+                                thành</button>
+                            <button class="filter-tag-pill" onclick="filterOrderStatus('DaHuy', this)">Đã hủy</button>
+                        </div>
+                        <input type="text" class="table-search-input" id="order-search-input"
+                            placeholder="Tìm theo mã đơn, người nhận, sđt..." onkeyup="searchOrdersTable(this.value)">
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã Đơn</th>
+                                    <th>Khách Hàng</th>
+                                    <th>Hình Thức</th>
+                                    <th>Phương Thức TT</th>
+                                    <th>Ngày Đặt</th>
+                                    <th>Tổng Tiền</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 3: QL BÁN HÀNG TẠI QUẦY (POS) -->
+            <div class="page-view" id="page-pos">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-cash-register" style="color: var(--bhx-green);"></i> Quản Lý Bán Hàng
+                            (Tại Quầy)</h1>
+                        <p>Lập hóa đơn bán trực tiếp tại siêu thị, tự động trừ tồn kho và cập nhật doanh thu</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-outline" onclick="resetPosSale()"><i
+                                class="fa-solid fa-arrow-rotate-left"></i> Tạo đơn mới</button>
+                    </div>
+                </div>
+
+                <div class="pos-layout">
+                    <!-- Catalog Column -->
+                    <div class="pos-catalog-panel">
+                        <div style="display: flex; gap: 10px; margin-bottom: 14px;">
+                            <input type="text" id="pos-search-input" class="table-search-input" style="flex: 1;"
+                                placeholder="Tìm rau củ quả theo tên, mã..." oninput="filterPosCatalog()">
+                            <select id="pos-category-filter"
+                                style="padding: 7px 12px; border: 1px solid var(--border-color); border-radius: var(--radius-sm);"
+                                onchange="filterPosCatalog()">
+                                <option value="">Tất cả loại</option>
+                            </select>
+                        </div>
+                        <div class="bhx-product-grid" id="pos-catalog-grid"
+                            style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); max-height: 520px; overflow-y: auto; padding: 4px;">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Cart / Bill Column -->
+                    <div class="pos-cart-panel">
+                        <h3
+                            style="font-size: 1.1rem; font-weight: 800; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                            <i class="fa-solid fa-receipt"></i> Hóa Đơn Bán Hàng
+                        </h3>
+
+
+                        <div class="pos-order-items-list" id="pos-bill-items">
+                            <p style="text-align: center; color: var(--text-muted); padding: 30px 0;">Chưa chọn sản phẩm
+                                nào.<br>Bấm vào sản phẩm bên trái để thêm.</p>
+                        </div>
+
+                        <div class="pos-calc-box">
+                            <div class="calc-line">
+                                <span>Tổng tiền hàng:</span>
+                                <strong id="pos-subtotal">0đ</strong>
+                            </div>
+                            <div class="calc-line total">
+                                <span>Khách phải trả:</span>
+                                <strong id="pos-total-amount">0đ</strong>
+                            </div>
+                            <div class="form-group" style="margin: 10px 0 6px;">
+                                <label>Phương thức thanh toán:</label>
+                                <select id="pos-payment-method" onchange="onPosPaymentMethodChange()">
+                                    <option value="TienMat">Tiền mặt tại quầy</option>
+                                    <option value="ChuyenKhoan">Chuyển khoản (Vietcombank QR)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 8px;">
+                                <label>Tiền khách đưa (VNĐ):</label>
+                                <input type="number" id="pos-cash-received" placeholder="Nhập số tiền..."
+                                    oninput="calcPosChange()">
+                                <div class="pos-quick-cash"
+                                    style="display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap;">
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCashExact()" title="Khách đưa vừa đủ tổng tiền">Đủ tiền</button>
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCash(20000)">20k</button>
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCash(50000)">50k</button>
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCash(100000)">100k</button>
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCash(200000)">200k</button>
+                                    <button type="button" class="btn-outline"
+                                        style="font-size: 0.74rem; padding: 3px 8px; border-radius: 4px;"
+                                        onclick="setPosCash(500000)">500k</button>
+                                </div>
+                            </div>
+                            <div class="calc-line">
+                                <span>Tiền thừa trả khách:</span>
+                                <strong id="pos-cash-change"
+                                    style="color: var(--bhx-green-dark); font-size: 1.05rem;">0đ</strong>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary"
+                            style="width: 100%; justify-content: center; padding: 12px; font-size: 1rem;"
+                            onclick="submitPosSale()">
+                            <i class="fa-solid fa-check"></i> Thanh Toán & In Hóa Đơn
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 4: QL SẢN PHẨM (STAFF & MANAGER) -->
+            <div class="page-view" id="page-products">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-carrot" style="color: var(--bhx-green);"></i> Quản Lý Sản Phẩm</h1>
+                        <p>Danh mục rau sạch, cập nhật giá bán, số lượng tồn kho và trạng thái kinh doanh</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-primary admin-only hidden" onclick="openAddProductModal()">
+                            <i class="fa-solid fa-plus"></i> Thêm Sản Phẩm Mới
+                        </button>
+                    </div>
+                </div>
+
+                <div class="data-table-card">
+                    <div class="table-filter-bar">
+                        <input type="text" class="table-search-input" id="product-mgmt-search"
+                            placeholder="Tìm sản phẩm theo tên, loại..." onkeyup="searchProductMgmt(this.value)">
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Hình Ảnh</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Loại</th>
+                                    <th>Nhà Cung Cấp</th>
+                                    <th>Đơn Vị</th>
+                                    <th>Giá Bán</th>
+                                    <th>Tồn Kho</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="product-mgmt-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 5: QL NHÀ CUNG CẤP & NHẬP HÀNG (MANAGER ONLY) -->
+            <div class="page-view" id="page-suppliers">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-truck-field" style="color: var(--bhx-green);"></i> Quản Lý Nhà Cung
+                            Cấp & Nhập Hàng</h1>
+                        <p>Theo dõi nguồn nhập rau hữu cơ, hợp tác xã và tạo phiếu nhập hàng tăng tồn kho</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-primary hidden" id="btn-create-receipt" onclick="openCreateReceiptModal()">
+                            <i class="fa-solid fa-file-circle-plus"></i> Lập Phiếu Nhập Hàng
+                        </button>
+                        <button class="btn-outline" onclick="openAddSupplierModal()">
+                            <i class="fa-solid fa-plus"></i> Thêm Nhà Cung Cấp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tabs: Danh sách NCC & Lịch sử Nhập hàng -->
+                <div style="display: flex; gap: 10px; margin-bottom: 14px;">
+                    <button class="filter-tag-pill active" id="tab-btn-suppliers"
+                        onclick="switchSupplierSubTab('suppliers')">Danh Sách Nhà Cung Cấp</button>
+                    <button class="filter-tag-pill hidden" id="tab-btn-receipts"
+                        onclick="switchSupplierSubTab('receipts')">Lịch Sử Phiếu Nhập Hàng</button>
+                </div>
+
+                <!-- Sub-tab 1: Nhà cung cấp -->
+                <div class="data-table-card" id="subtab-suppliers">
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã NCC</th>
+                                    <th>Tên Nhà Cung Cấp</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Email</th>
+                                    <th>Địa Chỉ</th>
+                                    <th>Số SP Cung Cấp</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="suppliers-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sub-tab 2: Phiếu nhập hàng -->
+                <div class="data-table-card hidden" id="subtab-receipts">
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã PN</th>
+                                    <th>Nhà Cung Cấp</th>
+                                    <th>Người Lập</th>
+                                    <th>Ngày Nhập</th>
+                                    <th>Số Mặt Hàng</th>
+                                    <th>Tổng Tiền Nhập</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="receipts-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 6: QL KHÁCH HÀNG (MANAGER ONLY) -->
+            <div class="page-view" id="page-customers">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-users" style="color: var(--bhx-green);"></i> Quản Lý Khách Hàng</h1>
+                        <p>Thêm, sửa, xóa hồ sơ khách hàng thành viên (kèm tài khoản đăng nhập)</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-primary" id="btn-add-customer" onclick="openAddCustomerModal()">
+                            <i class="fa-solid fa-user-plus"></i> Thêm Khách Hàng
+                        </button>
+                    </div>
+                </div>
+
+                <div class="data-table-card">
+                    <div class="table-filter-bar">
+                        <input type="text" class="table-search-input" id="customer-search-input"
+                            placeholder="Tìm theo tên, SĐT, email..."
+                            onkeyup="searchTable('customers-table-body', this.value)">
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã KH</th>
+                                    <th>Họ Và Tên</th>
+                                    <th>Tên Đăng Nhập</th>
+                                    <th>Mật Khẩu</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Email</th>
+                                    <th>Địa Chỉ Giao Hàng</th>
+                                    <th>Đơn Thành Công</th>
+                                    <th>Tổng Chi Tiêu</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="customers-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 7: QL NHÂN VIÊN (MANAGER ONLY) -->
+            <div class="page-view" id="page-employees">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-id-badge" style="color: var(--bhx-green);"></i> Quản Lý Nhân Viên</h1>
+                        <p>Thêm, sửa, xóa nhân viên và phân quyền (Nhân viên / Quản lý)</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-primary" id="btn-add-employee" onclick="openAddEmployeeModal()">
+                            <i class="fa-solid fa-user-plus"></i> Thêm Nhân Viên Mới
+                        </button>
+                    </div>
+                </div>
+
+                <div class="data-table-card">
+                    <div class="table-filter-bar">
+                        <input type="text" class="table-search-input" id="employee-search-input"
+                            placeholder="Tìm theo tên, tên đăng nhập..."
+                            onkeyup="searchTable('employees-table-body', this.value)">
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã NV</th>
+                                    <th>Họ Tên</th>
+                                    <th>Tên Đăng Nhập</th>
+                                    <th>Mật Khẩu</th>
+                                    <th>Vai Trò</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Giới Tính</th>
+                                    <th>Ngày Vào Làm</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employees-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 9: BÁO CÁO & THỐNG KÊ (MANAGER ONLY) -->
+            <div class="page-view" id="page-reports">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-chart-line" style="color: var(--bhx-green);"></i> Báo Cáo & Thống Kê
+                        </h1>
+                        <p>Dữ liệu trích xuất từ các View CSDL: v_doanh_thu_ngay, v_doanh_thu_thang, v_sp_ban_chay</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-outline" onclick="loadReportsData()"><i class="fa-solid fa-rotate"></i> Làm
+                            mới</button>
+                    </div>
+                </div>
+
+                <!-- 3 KPI Cards -->
+                <div class="kpi-cards-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon-box">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                        </div>
+                        <div class="kpi-text-info">
+                            <span>Tổng Doanh Thu</span>
+                            <h3 id="kpi-total-revenue">0đ</h3>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon-box blue">
+                            <i class="fa-solid fa-cart-flatbed"></i>
+                        </div>
+                        <div class="kpi-text-info">
+                            <span>Đơn Hàng Thành Công</span>
+                            <h3 id="kpi-completed-orders">0</h3>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon-box yellow">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="kpi-text-info">
+                            <span>Sản Phẩm Đang Bán</span>
+                            <h3 id="kpi-total-products">0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Best Sellers View -->
+                <div class="data-table-card" style="margin-bottom: 20px;">
+                    <div class="sidebar-header" style="background: var(--bhx-green-dark);">
+                        <i class="fa-solid fa-fire"></i> Top Sản Phẩm Bán Chạy (v_sp_ban_chay)
+                    </div>
+                    <div style="padding: 16px;" id="report-best-sellers-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Daily & Monthly Revenue Tables -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="data-table-card">
+                        <div class="sidebar-header">
+                            <i class="fa-solid fa-calendar-day"></i> Doanh Thu Theo Ngày (v_doanh_thu_ngay)
+                        </div>
+                        <div style="overflow-x: auto; max-height: 350px;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ngày</th>
+                                        <th>Số Đơn</th>
+                                        <th>Doanh Thu</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="report-daily-tbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="data-table-card">
+                        <div class="sidebar-header">
+                            <i class="fa-solid fa-calendar-days"></i> Doanh Thu Theo Tháng (v_doanh_thu_thang)
+                        </div>
+                        <div style="overflow-x: auto; max-height: 350px;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Năm</th>
+                                        <th>Tháng</th>
+                                        <th>Doanh Thu</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="report-monthly-tbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 10: ĐƠN HÀNG CỦA TÔI (CUSTOMER ONLY) -->
+            <div class="page-view" id="page-my-orders">
+                <div class="admin-page-header">
+                    <div class="admin-title-box">
+                        <h1><i class="fa-solid fa-clock-rotate-left" style="color: var(--bhx-green);"></i> Đơn Hàng Của
+                            Tôi</h1>
+                        <p>Theo dõi quá trình giao nhận rau sạch và xem lại lịch sử các đơn hàng đã đặt</p>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button class="btn-outline" onclick="loadMyOrders()"><i class="fa-solid fa-rotate"></i> Làm
+                            mới</button>
+                    </div>
+                </div>
+
+                <div class="data-table-card">
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã Đơn</th>
+                                    <th>Ngày Đặt</th>
+                                    <th>Địa Chỉ Nhận Hàng</th>
+                                    <th>Phương Thức TT</th>
+                                    <th>Chi Tiết Sản Phẩm</th>
+                                    <th>Tổng Tiền</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="my-orders-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- =========================================================================
+         SLIDE-OUT CART DRAWER
+         ========================================================================= -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay" onclick="toggleCartDrawer(false)">
+        <div class="cart-drawer" onclick="event.stopPropagation()">
+            <div class="cart-drawer-header">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-basket-shopping" style="color: var(--bhx-yellow);"></i>
+                    <strong style="font-size: 1.1rem;">Giỏ Hàng Của Bạn</strong>
+                </div>
+                <button class="modal-close-btn" style="color: #ffffff;" onclick="toggleCartDrawer(false)">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="cart-drawer-body" id="cart-drawer-items">
+                <!-- Populated dynamically -->
+            </div>
+
+            <div class="cart-drawer-footer">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <span style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 600;">Tổng thanh
+                        toán:</span>
+                    <strong id="cart-drawer-total" style="font-size: 1.35rem; color: var(--bhx-green-dark);">0đ</strong>
+                </div>
+                <button class="btn-primary"
+                    style="width: 100%; justify-content: center; padding: 12px; font-size: 1rem;"
+                    onclick="openCheckoutModal()">
+                    <i class="fa-solid fa-credit-card"></i> Tiến Hành Đặt Hàng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         MODALS
+         ========================================================================= -->
+
+    <!-- 1. AUTH MODAL (LOGIN & REGISTER WITH 1-CLICK TEST FILL) -->
+    <div class="modal-overlay" id="modal-auth">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="auth-modal-title">Đăng Nhập Tài Khoản</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-auth')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- 1-Click Fast Test Fill Buttons -->
+                <div
+                    style="background: #f0fdf4; border: 1px dashed var(--bhx-green); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 16px;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--bhx-green-dark); margin-bottom: 6px;">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Đăng nhập nhanh kiểm tra 3 vai trò:
+                    </div>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button class="filter-tag-pill" style="font-size: 0.78rem;"
+                            onclick="quickFillAccount('admin', 'admin', 'QuanLy')">🔑 Quản Lý (admin)</button>
+                        <button class="filter-tag-pill" style="font-size: 0.78rem;"
+                            onclick="quickFillAccount('nv_lan', '123456', 'NhanVien')">👔 Nhân Viên (nv_lan)</button>
+                        <button class="filter-tag-pill" style="font-size: 0.78rem;"
+                            onclick="quickFillAccount('kh01', 'kh01', 'KhachHang')">🛒 Khách Hàng (kh01)</button>
+                    </div>
+                </div>
+
+                <!-- Tabs: Đăng nhập / Đăng ký -->
+                <div style="display: flex; border-bottom: 2px solid var(--border-color); margin-bottom: 16px;">
+                    <button class="subnav-link active" id="tab-auth-login" style="flex: 1; justify-content: center;"
+                        onclick="switchAuthTab('login')">Đăng Nhập</button>
+                    <button class="subnav-link" id="tab-auth-register" style="flex: 1; justify-content: center;"
+                        onclick="switchAuthTab('register')">Đăng Ký Khách Mới</button>
+                </div>
+
+                <!-- Form Login -->
+                <form id="form-login" onsubmit="handleLoginSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <label>Tên đăng nhập:</label>
+                        <input type="text" id="login-username" placeholder="Nhập tên đăng nhập...">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu:</label>
+                        <input type="password" id="login-password" placeholder="Nhập mật khẩu...">
+                    </div>
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; padding: 10px; margin-top: 8px;">
+                        Đăng Nhập
+                    </button>
+                </form>
+
+                <!-- Form Register (UC1) -->
+                <form id="form-register" class="hidden" onsubmit="handleRegisterSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <label>Tên đăng nhập (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="reg-username" placeholder="Tên đăng nhập (chữ và số, không ký tự đặc biệt)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu:</label>
+                        <input type="password" id="reg-password" placeholder="Mật khẩu bảo mật...">
+                    </div>
+                    <div class="form-group">
+                        <label>Họ và tên (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="reg-fullname" placeholder="Họ và tên của bạn (không chứa số, ký tự đặc biệt)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="tel" id="reg-phone" maxlength="10"
+                            placeholder="Số điện thoại nhận hàng (10 số, bắt đầu bằng 0)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Email (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="reg-email" placeholder="Địa chỉ email (@gmail.com)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ nhận hàng mặc định:</label>
+                        <textarea id="reg-address" rows="2"
+                            placeholder="Số nhà, đường, phường, quận/huyện..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; padding: 10px; margin-top: 8px;">
+                        Tạo Tài Khoản
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. CHECKOUT MODAL (UC6: THANH TOÁN TỪ GIỎ HÀNG) -->
+    <div class="modal-overlay" id="modal-checkout">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-truck-fast" style="color: var(--bhx-green);"></i> Thanh Toán & Đặt Hàng</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-checkout')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div style="background: #f8fafc; border-radius: var(--radius-sm); padding: 12px; margin-bottom: 16px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                        <span style="color: var(--text-secondary);">Tổng tiền đơn hàng:</span>
+                        <strong id="checkout-subtotal-val"
+                            style="color: var(--bhx-green-dark); font-size: 1.15rem;">0đ</strong>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #6b7280;">Miễn phí giao hàng cho đơn rau tươi sạch Bách Hóa
+                        XANH</div>
+                </div>
+
+                <form id="form-checkout" onsubmit="handleCheckoutSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <label>Địa chỉ nhận hàng (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <textarea id="checkout-address" rows="2"
+                            placeholder="Nhập địa chỉ nhận hàng chi tiết..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Phương thức thanh toán (Strategy Pattern):</label>
+                        <select id="checkout-payment-method" onchange="handlePaymentMethodChange(this.value)">
+                            <option value="COD">Thanh toán khi nhận hàng (COD)</option>
+                            <option value="ChuyenKhoan">Chuyển khoản ngân hàng (Vietcombank QR)</option>
+                            <option value="TienMat">Tiền mặt</option>
+                        </select>
+                    </div>
+
+                    <!-- Payment Strategy Info Box -->
+                    <div id="payment-strategy-info"
+                        style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 12px; margin-bottom: 16px; font-size: 0.85rem;">
+                        <i class="fa-solid fa-circle-info" style="color: var(--bhx-green);"></i>
+                        <span id="payment-strategy-desc">Nhân viên sẽ thu tiền mặt khi giao rau tươi tận nơi cho
+                            bạn.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ghi chú cho cửa hàng:</label>
+                        <input type="text" id="checkout-note"
+                            placeholder="Ví dụ: Giao giờ hành chính, chọn bó rau tươi giúp em...">
+                    </div>
+
+                    <div class="modal-footer" style="padding-left: 0; padding-right: 0; background: none;">
+                        <button type="button" class="btn-outline" onclick="closeModal('modal-checkout')">Hủy</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fa-solid fa-circle-check"></i> Xác Nhận Đặt Hàng
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. PRODUCT DETAIL MODAL (UC3: TRA CỨU CHI TIẾT) -->
+    <div class="modal-overlay" id="modal-product-detail">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="pdetail-title">Chi Tiết Sản Phẩm</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-product-detail')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" id="pdetail-body">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. USER PROFILE & CHANGE PASSWORD MODAL (UC4: TÀI KHOẢN) -->
+    <div class="modal-overlay" id="modal-profile">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-user-circle" style="color: var(--bhx-green);"></i> Thông Tin Tài Khoản</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-profile')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-profile" onsubmit="handleProfileUpdate(event)" novalidate>
+                    <div class="form-group">
+                        <label>Tên đăng nhập:</label>
+                        <input type="text" id="profile-username" disabled style="background: #f1f5f9;">
+                    </div>
+                    <div class="form-group">
+                        <label>Vai trò:</label>
+                        <input type="text" id="profile-role" disabled
+                            style="background: #f1f5f9; font-weight: 700; color: var(--bhx-green-dark);">
+                    </div>
+                    <div class="form-group">
+                        <label>Họ và tên:</label>
+                        <input type="text" id="profile-fullname" placeholder="Họ và tên (không chứa số, ký tự đặc biệt)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="tel" id="profile-phone" maxlength="10" placeholder="09xxxxxxxx (10 chữ số)">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="text" id="profile-email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <textarea id="profile-address" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; margin-bottom: 16px;">
+                        Lưu Cập Nhật
+                    </button>
+                </form>
+
+                <hr style="border: none; border-top: 1px solid var(--border-color); margin: 16px 0;">
+
+                <div id="change-password-section">
+                    <button type="button" id="btn-toggle-password-form" class="btn-outline"
+                        style="width: 100%; justify-content: center;" onclick="toggleChangePasswordForm()">
+                        <i class="fa-solid fa-lock"></i> Đổi Mật Khẩu
+                    </button>
+
+                    <div id="form-change-password-container" style="display: none; margin-top: 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 800; margin-bottom: 10px;">Thay Đổi Mật Khẩu</h4>
+                        <form id="form-change-password" onsubmit="handleChangePassword(event)" novalidate>
+                            <div class="form-group">
+                                <label>Mật khẩu cũ:</label>
+                                <input type="password" id="chg-old-password" placeholder="Nhập mật khẩu hiện tại..."
+                                    required minlength="6">
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu mới (ít nhất 6 ký tự):</label>
+                                <input type="password" id="chg-new-password" placeholder="Nhập mật khẩu mới..." required
+                                    minlength="6">
+                            </div>
+                            <div class="form-group">
+                                <label>Xác nhận mật khẩu mới:</label>
+                                <input type="password" id="chg-confirm-password" placeholder="Nhập lại mật khẩu mới..."
+                                    required minlength="6">
+                            </div>
+                            <button type="submit" class="btn-primary"
+                                style="width: 100%; justify-content: center; margin-bottom: 8px;">
+                                Cập Nhật Mật Khẩu
+                            </button>
+                            <button type="button" class="btn-outline" style="width: 100%; justify-content: center;"
+                                onclick="toggleChangePasswordForm()">
+                                Hủy
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <button class="btn-outline" style="color: var(--bhx-red); border-color: #fca5a5;"
+                        onclick="handleLogout()">
+                        <i class="fa-solid fa-right-from-bracket"></i> Đăng Xuất Khỏi Hệ Thống
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. ADD / EDIT PRODUCT MODAL (UC9: QL SẢN PHẨM) -->
+    <div class="modal-overlay" id="modal-product-form">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="product-form-modal-title">Thêm Sản Phẩm Mới</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-product-form')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-product" onsubmit="handleProductSubmit(event)" novalidate>
+                    <input type="hidden" id="prod-form-id">
+                    <div class="form-group">
+                        <label>Tên sản phẩm (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="prod-name" placeholder="Ví dụ: Cải thìa tươi VietGAP (không chứa ký tự đặc biệt)...">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <div class="form-group">
+                            <label>Loại sản phẩm:</label>
+                            <select id="prod-category"></select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nhà cung cấp:</label>
+                            <select id="prod-supplier"></select>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+                        <div class="form-group">
+                            <label>Đơn vị tính:</label>
+                            <input type="text" id="prod-unit" value="300g" placeholder="kg, 300g, bó...">
+                        </div>
+                        <div class="form-group">
+                            <label>Giá bán (VNĐ):</label>
+                            <input type="text" id="prod-price" inputmode="decimal" placeholder="15000">
+                        </div>
+                        <div class="form-group" id="prod-stock-group">
+                            <label>Số lượng tồn:</label>
+                            <input type="number" id="prod-stock" min="0" value="50">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Đường dẫn hình ảnh (URL):</label>
+                        <input type="url" id="prod-image" placeholder="https://images.unsplash.com/...">
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả sản phẩm:</label>
+                        <textarea id="prod-description" rows="3" placeholder="Mô tả công dụng, nguồn gốc..."></textarea>
+                    </div>
+                    <div class="modal-footer" style="padding-left: 0; padding-right: 0; background: none;">
+                        <button type="button" class="btn-outline"
+                            onclick="closeModal('modal-product-form')">Hủy</button>
+                        <button type="submit" class="btn-primary" id="product-form-submit-btn">Lưu thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. CREATE PURCHASE RECEIPT MODAL (UC10: LẬP PHIẾU NHẬP HÀNG) -->
+    <div class="modal-overlay" id="modal-receipt-form">
+        <div class="modal-dialog large">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-invoice" style="color: var(--bhx-green);"></i> Lập Phiếu Nhập Hàng Từ Nhà
+                    Cung Cấp</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-receipt-form')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-purchase-receipt" onsubmit="handlePurchaseReceiptSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <label>Chọn Nhà Cung Cấp (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <select id="receipt-supplier-select"></select>
+                    </div>
+
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin: 16px 0 10px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 800;">Danh Sách Mặt Hàng Nhập (Trigger DB tự động
+                            cộng kho)</h4>
+                        <button type="button" class="btn-outline" style="font-size: 0.8rem; padding: 4px 10px;"
+                            onclick="addReceiptRow()">
+                            <i class="fa-solid fa-plus"></i> Thêm Dòng
+                        </button>
+                    </div>
+
+                    <div id="receipt-items-container" style="display: flex; flex-direction: column; gap: 8px;">
+                        <!-- Dynamic rows inserted -->
+                    </div>
+
+                    <div
+                        style="display: flex; justify-content: flex-end; align-items: center; gap: 16px; margin-top: 16px; padding: 12px; background: #f8fafc; border-radius: var(--radius-sm);">
+                        <span>Tổng tiền nhập dự tính:</span>
+                        <strong id="receipt-calc-total"
+                            style="font-size: 1.25rem; color: var(--bhx-green-dark);">0đ</strong>
+                    </div>
+
+                    <div class="modal-footer"
+                        style="padding-left: 0; padding-right: 0; background: none; margin-top: 16px;">
+                        <button type="button" class="btn-outline"
+                            onclick="closeModal('modal-receipt-form')">Hủy</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fa-solid fa-check"></i> Lưu Phiếu Nhập & Tăng Kho
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. ADD SUPPLIER MODAL (UC10) -->
+    <div class="modal-overlay" id="modal-supplier-form">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="supplier-form-title">Thêm Nhà Cung Cấp</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-supplier-form')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-supplier" onsubmit="handleSupplierSubmit(event)" novalidate>
+                    <input type="hidden" id="supp-id">
+                    <div class="form-group">
+                        <label>Tên nhà cung cấp (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="supp-name" placeholder="Ví dụ: HTX Rau Mộc Châu (không chứa ký tự đặc biệt)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="tel" id="supp-phone" maxlength="10" placeholder="09xxxxxxxx (10 chữ số)">
+                    </div>
+                    <div class="form-group">
+                        <label>Email (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="supp-email" placeholder="ncc@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <textarea id="supp-address" rows="2" placeholder="Vùng trồng, tỉnh/thành..."></textarea>
+                    </div>
+                    <div class="modal-footer" style="padding-left: 0; padding-right: 0; background: none;">
+                        <button type="button" class="btn-outline"
+                            onclick="closeModal('modal-supplier-form')">Hủy</button>
+                        <button type="submit" class="btn-primary" id="supplier-form-submit-btn">Lưu thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. ADD / EDIT EMPLOYEE MODAL (UC07, UC08) -->
+    <div class="modal-overlay" id="modal-employee-form">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="employee-form-title">Thêm Nhân Viên Mới</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-employee-form')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-employee" onsubmit="handleEmployeeSubmit(event)" novalidate>
+                    <input type="hidden" id="emp-id">
+                    <div class="form-group" id="emp-username-group">
+                        <label>Tên đăng nhập (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="emp-username" placeholder="Ví dụ: nv02...">
+                    </div>
+                    <div class="form-group" id="emp-password-group">
+                        <label>Mật khẩu:</label>
+                        <input type="text" id="emp-password" placeholder="Mặc định 123456 nếu để trống khi thêm mới">
+                    </div>
+                    <div class="form-group">
+                        <label>Phân quyền (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <select id="emp-role">
+                            <option value="NhanVien">Nhân Viên</option>
+                            <option value="QuanLy">Quản Lý (Admin)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Họ và tên (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="emp-fullname" placeholder="Nguyễn Văn A (không chứa số, ký tự đặc biệt)...">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div class="form-group">
+                            <label>Ngày sinh:</label>
+                            <input type="date" id="emp-birthday">
+                        </div>
+                        <div class="form-group">
+                            <label>Giới tính:</label>
+                            <select id="emp-gender">
+                                <option value="Nam">Nam</option>
+                                <option value="Nu">Nữ</option>
+                                <option value="Khac">Khác</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="tel" id="emp-phone" maxlength="10" placeholder="09xxxxxxxx (10 chữ số)">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <input type="text" id="emp-address">
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày vào làm:</label>
+                        <input type="date" id="emp-hiredate">
+                    </div>
+                    <div class="modal-footer" style="padding-left: 0; padding-right: 0; background: none;">
+                        <button type="button" class="btn-outline"
+                            onclick="closeModal('modal-employee-form')">Hủy</button>
+                        <button type="submit" class="btn-primary" id="employee-form-submit-btn">Lưu thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. ADD / EDIT CUSTOMER MODAL (UC04, UC05) -->
+    <div class="modal-overlay" id="modal-customer-form">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="customer-form-title">Thêm Khách Hàng Mới</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-customer-form')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-customer" onsubmit="handleCustomerSubmit(event)" novalidate>
+                    <input type="hidden" id="cust-id">
+                    <div class="form-group" id="cust-username-group">
+                        <label>Tên đăng nhập (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="cust-username" placeholder="Ví dụ: khachhang02...">
+                    </div>
+                    <div class="form-group" id="cust-password-group">
+                        <label>Mật khẩu:</label>
+                        <input type="text" id="cust-password" placeholder="Mặc định 123456 nếu để trống khi thêm mới">
+                    </div>
+                    <div class="form-group">
+                        <label>Họ và tên (<span style="color: var(--bhx-red);">*</span>):</label>
+                        <input type="text" id="cust-fullname" placeholder="Nguyễn Thị B (không chứa số, ký tự đặc biệt)...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="tel" id="cust-phone" maxlength="10" placeholder="09xxxxxxxx (10 chữ số)">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="text" id="cust-email" placeholder="email@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ giao hàng:</label>
+                        <textarea id="cust-address" rows="2" placeholder="Số nhà, đường, phường, quận..."></textarea>
+                    </div>
+                    <div class="modal-footer" style="padding-left: 0; padding-right: 0; background: none;">
+                        <button type="button" class="btn-outline"
+                            onclick="closeModal('modal-customer-form')">Hủy</button>
+                        <button type="submit" class="btn-primary" id="customer-form-submit-btn">Lưu thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. CUSTOM CONFIRM DIALOG (dùng cho UC03, UC06, UC09, UC12, UC15) -->
+    <div class="modal-overlay" id="modal-confirm">
+        <div class="modal-dialog" style="max-width: 420px;">
+            <div class="modal-header" style="background: #fff1f2; border-bottom: 1px solid #fecdd3;">
+                <h3 style="color: var(--bhx-red);"><i class="fa-solid fa-triangle-exclamation"></i> Xác Nhận Xóa</h3>
+                <button class="modal-close-btn" style="color: var(--bhx-red);" onclick="closeModal('modal-confirm')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" style="text-align: center; padding: 28px 24px;">
+                <div style="font-size: 2.5rem; margin-bottom: 12px;">🗑️</div>
+                <p id="confirm-message" style="font-size: 1rem; font-weight: 600; color: #374151; line-height: 1.6;">Bạn
+                    có chắc chắn muốn xóa không?</p>
+                <p style="font-size: 0.85rem; color: #6b7280; margin-top: 6px;">Thao tác này không thể hoàn tác.</p>
+            </div>
+            <div class="modal-footer" style="justify-content: center; gap: 16px;">
+                <button class="btn-outline" style="min-width: 100px;" onclick="closeModal('modal-confirm')">Hủy</button>
+                <button class="btn-primary"
+                    style="min-width: 100px; background: var(--bhx-red); border-color: var(--bhx-red);"
+                    id="confirm-ok-btn" onclick="executeConfirmAction()">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. ORDER DETAIL MODAL -->
+    <div class="modal-overlay" id="modal-order-detail">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="odetail-title">Chi Tiết Đơn Hàng</h3>
+                <button class="modal-close-btn" onclick="closeModal('modal-order-detail')"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" id="odetail-body">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    </div><!-- end #main-app -->
+
+    <!-- Modular Scripts theo từng chức năng Website Bán Rau Sạch -->
+    <script src="js/modules/core/state.js?v=20261001"></script>
+    <script src="js/modules/core/api.js?v=20261001"></script>
+    <script src="js/modules/core/validation.js?v=20261001"></script>
+    <script src="js/modules/core/utils.js?v=20261001"></script>
+    <script src="js/modules/auth/auth.js?v=20261001"></script>
+    <script src="js/modules/navigation/nav.js?v=20261001"></script>
+    <script src="js/modules/san-pham/san-pham.js?v=20261001"></script>
+    <script src="js/modules/gio-hang/gio-hang.js?v=20261001"></script>
+    <script src="js/modules/don-hang/don-hang.js?v=20261001"></script>
+    <script src="js/modules/ban-hang-tai-quay/pos.js?v=20261001"></script>
+    <script src="js/modules/nha-cung-cap/nha-cung-cap.js?v=20261001"></script>
+    <script src="js/modules/nhap-kho/nhap-kho.js?v=20261001"></script>
+    <script src="js/modules/khach-hang/khach-hang.js?v=20261001"></script>
+    <script src="js/modules/nhan-vien/nhan-vien.js?v=20261001"></script>
+    <script src="js/modules/thong-ke/thong-ke.js?v=20261001"></script>
+    <!-- Entry Point Bootstrap -->
+    <script src="js/app.js?v=20261001"></script>
+</body>
+
+</html>

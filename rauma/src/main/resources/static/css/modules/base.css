@@ -1,0 +1,115 @@
+/* ==========================================================================
+   CSS MODULE: BASE & DESIGN SYSTEM - BÁCH HÓA XANH RAU SẠCH
+   ========================================================================== */
+
+/* ==========================================================================
+   BÁCH HÓA XANH DESIGN SYSTEM & VARIABLES
+   Hệ Thống Web Bán Rau Sạch (MVC Spring Boot - MySQL - XAMPP)
+   ========================================================================== */
+:root {
+    /* Signature Bách Hóa Xanh Brand Colors */
+    --bhx-green: #008848;
+    --bhx-green-dark: #006837;
+    --bhx-green-hover: #00773f;
+    --bhx-green-light: #e8f5e9;
+    --bhx-green-subtle: #f0fdf4;
+    
+    --bhx-yellow: #fed100;
+    --bhx-yellow-dark: #e5bc00;
+    --bhx-yellow-light: #fffde7;
+    
+    --bhx-red: #ea1c24;
+    --bhx-red-light: #fee2e2;
+    --bhx-orange: #f97316;
+    
+    /* Neutrals */
+    --bg-page: #f4f6f8;
+    --bg-card: #ffffff;
+    --border-color: #e5e7eb;
+    --border-light: #f1f5f9;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --text-white: #ffffff;
+    
+    /* Status Colors */
+    --status-choxacnhan: #f59e0b;
+    --status-danggiao: #3b82f6;
+    --status-hoanthanh: #10b981;
+    --status-dahuy: #ef4444;
+    
+    /* Shadows & Border Radius */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+    
+    --header-height: 74px;
+    --sidebar-width: 250px;
+}
+
+/* Base & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-page) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Ensure all form controls, buttons, tables, headings use the unified font across entire website */
+input, button, select, textarea, optgroup {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-logo, .logo-title, .nav-item, .subnav-link, .card-title, .modal-title {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Utilities */
+.hidden {
+    display: none !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.2s ease;
+}
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+

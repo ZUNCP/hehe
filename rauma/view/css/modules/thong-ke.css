@@ -1,0 +1,79 @@
+/* ==========================================================================
+   CSS MODULE: BÁO CÁO & THỐNG KÊ (KPI Cards, Top bán chạy, Biểu đồ)
+   ========================================================================== */
+
+.kpi-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.kpi-card {
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-xs);
+}
+
+.kpi-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-md);
+    background: var(--bhx-green-light);
+    color: var(--bhx-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.kpi-icon-box.yellow {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.kpi-icon-box.red {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.kpi-icon-box.blue {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.kpi-text-info span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.kpi-text-info h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-top: 2px;
+}
+
+/* Best sellers progress bar */
+.rank-bar-wrap {
+    width: 100%;
+    background: #f1f5f9;
+    border-radius: var(--radius-full);
+    height: 8px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.rank-bar-fill {
+    background: var(--bhx-green);
+    height: 100%;
+    border-radius: var(--radius-full);
+}
+
